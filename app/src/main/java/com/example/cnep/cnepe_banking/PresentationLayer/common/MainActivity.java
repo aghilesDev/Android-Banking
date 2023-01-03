@@ -1,7 +1,8 @@
-package com.example.cnep;
+package com.example.cnep.cnepe_banking.PresentationLayer.common;
 
 import android.os.Bundle;
 
+import com.example.cnep.R;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
