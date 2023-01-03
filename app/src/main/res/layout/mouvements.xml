@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_mouvements"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?attr/colorBackgroundFloating"
+        android:elevation="4dp"
+        android:gravity="center_horizontal"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ListMouvement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ECEFF1"
+        android:clipChildren="false"
+        android:clipToPadding="false" />
+
+    <ProgressBar
+        android:id="@+id/progress2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone" />
+    <Button
+        android:id="@+id/NoConnectionMouvements"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efe8e8"
+        android:text="No Connection"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="30sp"
+        android:visibility="gone" />
+</LinearLayout>

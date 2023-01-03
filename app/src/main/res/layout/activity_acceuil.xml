@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cnep.cnepe_banking.PresentationLayer.View.Accueil"
+    android:background="#f2f2f2">
+
+    <Button
+        android:id="@+id/bAgences"
+        android:layout_width="170dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/button_selector"
+        android:text="Agences"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintLeft_toLeftOf="@+id/bComptes"
+        app:layout_constraintTop_toBottomOf="@+id/bComptes" />
+
+    <Button
+        android:id="@+id/bMaps"
+        android:layout_width="170dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/button_selector"
+        android:text="Agences et dab aux alentours"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintLeft_toRightOf="@+id/bAgences"
+        app:layout_constraintTop_toTopOf="@+id/bAgences" />
+
+    <Button
+        android:id="@+id/bComptes"
+        android:layout_width="170dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_selector"
+        android:text="Mes comptes"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintLeft_toLeftOf="@+id/bProfile"
+        app:layout_constraintTop_toBottomOf="@+id/bProfile" />
+
+    <Button
+        android:id="@+id/bCredits"
+        android:layout_width="170dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/button_selector"
+        android:text="Mes Crédits"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/bMaps"
+        app:layout_constraintRight_toRightOf="@+id/bMaps"
+        app:layout_constraintTop_toTopOf="@+id/bComptes"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_accueille"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:background="?attr/colorBackgroundFloating"
+        android:elevation="4dp"
+        android:gravity="center_horizontal"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="MissingClass" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_selector"
+        android:text="E-Paiement"
+        android:textColor="@android:color/background_light"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@+id/bAgences"
+        app:layout_constraintTop_toBottomOf="@+id/bAgences" />
+
+    <Button
+        android:id="@+id/bProfile"
+        android:layout_width="350dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_selector"
+        android:text="Mon Profil"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_accueille" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

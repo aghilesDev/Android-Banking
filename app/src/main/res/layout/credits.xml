@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_credits"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?attr/colorBackgroundFloating"
+        android:elevation="4dp"
+        android:gravity="center_horizontal"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listCredits"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/progress_credits"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone" />
+    <Button
+        android:id="@+id/NoConnectionCredits"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efe8e8"
+        android:text="No Connection"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="30sp"
+        android:visibility="gone" />
+</LinearLayout>
